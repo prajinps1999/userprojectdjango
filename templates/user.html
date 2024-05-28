@@ -1,7 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<h1> ADD USER </h1>
+<form action=" " method="post">
+    {% csrf_token %}
+    <label for="">USER NAME</label>
+    <input type="text" name="bio" placeholder="ENTER USER NAME" value="{{user.bio}}">
+    <label for="">SKILL</label>
+    <input type="text" name="skill_set" placeholder="ENTER SKILL" value="{{user.skill_set}}">
+    <label for="">CONTACT</label>
+    <input type="text" name="contact_details" placeholder=" ENTER CONTACT NUMBER" value="{{user.contact_details}}">
+    <input type="submit" value="ADD">
 
+</form>
 <table class="table">
     <thead>
     <tr>
@@ -29,3 +40,4 @@
     </tbody>
 </table>
 {% endblock %}
+

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>USER</title>
+    <title>Title</title>
 </head>
 <body>
-<h1> ADD USER </h1>
+<h1> UPDATE USER </h1>
 <form action=" " method="post">
     {% csrf_token %}
     <label for="">USER NAME</label>
@@ -14,7 +14,7 @@
     <input type="text" name="skill_set" placeholder="ENTER SKILL" value="{{user.skill_set}}">
     <label for="">CONTACT</label>
     <input type="text" name="contact_details" placeholder=" ENTER CONTACT NUMBER" value="{{user.contact_details}}">
-    <input type="submit" value="ADD">
+    <input type="submit" value="Update">
 
 </form>
 </body>

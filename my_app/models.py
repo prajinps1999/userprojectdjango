@@ -1,7 +1,7 @@
 from django.db import models
 class User(models.Model):
     bio=models.CharField(max_length=200)
-    skillset=models.CharField(max_length=200)
+    skill_set=models.CharField(max_length=200)
     contact_details=models.IntegerField()
 
     def __str__(self):
